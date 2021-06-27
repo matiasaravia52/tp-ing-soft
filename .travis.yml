@@ -16,7 +16,9 @@ before_deploy:
   - npm install netlify-cli -g
 
 deploy:
-  provider: script
-  script: netlify deploy -s $NETFLIFY_SITE -t $NETLIFY_AUTH -p ./dist
+  provider: netlify
+  dir: "dist/"
+  site: $NETFLIFY_SITE
+  auth: $NETLIFY_AUTH
   on:
     branche: main
