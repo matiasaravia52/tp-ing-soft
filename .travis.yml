@@ -12,10 +12,11 @@ script:
   - npm install
   - npm run build
 
+before_deploy:
+  - npm install netlify-cli -g
+
 deploy:
-  provider: netlify
-  dir: "dist/"
-  site: c1d21e72-c92e-4bb5-baa9-0263e7a3136d
-  auth: $NETLIFY_AUTH
+  provider: script
+  script: netlify deploy -s $NETFLIFY_SITE -t $NETLIFY_AUTH -p ./dist
   on:
     branche: main
