@@ -14,3 +14,7 @@ script:
 
 deploy:
   provider: netlify
+  dir: "dist/"
+  auth: $NETLIFY_AUTH
+  on:
+    branche: main
