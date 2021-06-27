@@ -9,6 +9,7 @@
   box-sizing: border-box;
 }
 body {
+  background: cornflowerblue;
   font-family: "roboto";
   height: 550px;
   display: flex;
@@ -21,6 +22,16 @@ form {
   box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
   border-radius: 10px;
 }
+
+.box-result {
+  background: #fff;
+  padding: 40px 0;
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin-left: 1%;
+  padding: 1%;
+}
+
 .form {
   width: 100%;
   margin: auto;
