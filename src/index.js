@@ -1,4 +1,12 @@
-import './styles/main.css';
+import "./styles/main.css";
+import sum from "./utils/sum";
 
-const main = null || document.getElementById('main');
-main.innerHTML = "<h1> Hola Munde! </h1>";
+document.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  const firstNumber = document.getElementById("first-value").value;
+  const secondNumber = document.getElementById("second-value").value;
+  const result = await sum(firstNumber, secondNumber);
+  const resultDiv = null || document.getElementById("result");
+  resultDiv.innerHTML = `<h1> El resultado es: ${result} </h1>`;
+});
