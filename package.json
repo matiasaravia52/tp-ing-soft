@@ -4,7 +4,8 @@
   "description": "proyecto educativo de integracion continua",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production --config webpack.config.js"
   },
   "author": "Matias Saravia",
   "license": "ISC",

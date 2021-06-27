@@ -11,7 +11,6 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[contenthash].js',
     },
-    watch: true,
     resolve: {
         extensions: ['.js']
     },
